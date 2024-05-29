@@ -1,5 +1,5 @@
 # This bash script uses 'git' to do the following:
-# 1)  stage changes
+# 1) stage changes
 # 2) commit changes
 # 3) push changes to the upstream  repository on branch 'main'.
 
