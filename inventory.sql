@@ -84,10 +84,8 @@ VALUES
     (10, 'Board Game', 5, 24.99),
     (11, 'Basketball', 6, 29.99),
     (12, 'Yoga Mat', 6, 19.99),
-    (13, 'Shampoo', 7, 7.99),
-    (14, 'Lipstick', 7, 14.99),
-    (15, 'Coffee', 8, 9.99),
-    (16, 'Chocolate', 8, 4.99);
+    (13, 'Shampoo', 7, 7.99);
+
 
 -- Create a stored procedure 'RetrieveAllCategories' to get all categories.
 IF OBJECT_ID('RetrieveAllCategories', 'P') IS NOT NULL
@@ -96,9 +94,9 @@ BEGIN
 END;
 
 -- Create a stored procedure 'ProductsByCategory' to get all products in a specific category.
-IF OBJECT_ID('ProductsByCategory', 'P') IS NOT NULL
+IF OBJECT_ID('ProductsInInventoryByCategory', 'P') IS NOT NULL
 BEGIN
-    DROP PROCEDURE ProductsByCategory;
+    DROP PROCEDURE ProductsInInventoryByCategory;
 END;
 
 -- Create a stored procedure 'CreateProduct' to insert a new product into the 'Products' table.
